@@ -1,0 +1,112 @@
+/*
+  Authors : Mudey Formation
+  Website : https://mudey.fr/
+  App Name : E-commerce with React.Js
+  Created At : 04/03/2024 16:52:54
+*/
+
+.Header {
+
+}
+.Header .header-top{
+background-color: #008b58;
+height: 75px;
+align-items: center;
+justify-content: space-around;
+margin-left: -150px;
+margin-right: -150px;
+}
+.Header .header-top .logo img{
+width: 50px;
+
+}
+.Header .header-top .company-name{
+font-size: 27px;
+
+}
+.Header .header-top .company-number{
+font-size: 27px;
+
+}
+
+
+.Header .header-bottom{
+background-color: white;
+height: 100px;
+border: 1px solid red;
+
+}
+.Header .header-bottom .header-bottom-content{
+list-style: none;
+font-weight: bold;
+justify-content: center;
+align-items: center;
+padding: 40px;
+color: #008b58;
+font-size: 22px;
+margin-top: -20px;
+}
+.Header .header-bottom .header-bottom-content li{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 50px;
+width: 200px;
+}
+.Header .header-bottom .header-bottom-content li:hover{
+ background-color: #008b58;
+ color: white;
+ border-radius: 10px;
+}
+.Header .header-bottom .header-bottom-content li .dropdown-toggle{
+  background-color: white;
+  border: none;
+  color: #008b58;
+  font-weight: bold;
+  font-size: 22px;
+  height: 50px;
+  width: 200px;
+}
+.Header .header-bottom .header-bottom-content li .dropdown-toggle:hover{
+  background-color: #008b58;
+  color: white;
+  
+}
+.Header .header-bottom .header-bottom-content li .dropdown-menu{
+  margin-top: 25px;
+  margin-left: -210px;
+  text-align: center;
+  padding: 8px;
+}
+.Header .header-bottom .header-bottom-content li .dropdown-menu .dropdown-item{
+  font-weight: bold;
+  font-size: 22px;
+  color: #008b58;
+  padding: 5px;
+}
+.Header .header-bottom .header-bottom-content li .dropdown-menu .dropdown-item:hover{
+  background-color: #008b58;
+  color: white;
+  border-radius: 10px;
+  
+}
+
+
+@media screen and (max-width: 960px) {
+  .Header .header-top {
+    margin-left: -20px;
+    margin-right: 0px;
+
+  }
+  .Header .header-top .phone-number2 {
+    display: none;
+  }
+
+  .Header .header-bottom .header-bottom-content{
+    display: none!important;
+  }
+}
+
+
+
+
