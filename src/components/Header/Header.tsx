@@ -56,11 +56,11 @@ const Header: FC<HeaderProps> = () => {
   return (
     <div className="Header ">
       <div className='header-top d-flex text-white'>
-        <div className='d-flex'>
-          <div className='logo'>
-            <img src="/assets/images/Logo_AFRISILO.jpg" alt="logo AFRISILO" />
+        <div className='d-flex '>
+          <div className='logo mb-2'>
+            <img src="/assets/images/logoAfriSilo-removebg.png" alt="logo AFRISILO" />
           </div>
-          <div className='company-name '>AFRI SILO</div>
+          {/* <div className='company-name '>AFRI SILO</div> */}
         </div>
         <div className='company-number d-flex mt-1'>
           <>+229 97 58 21 85<p className='phone-number2'> / +229 94 85 45 68</p> </>
@@ -119,13 +119,13 @@ const Header: FC<HeaderProps> = () => {
           <li>A PROPOS</li>
           <li>NOS PRODUITS</li>
           <li className='li'>
-            <div>
+            
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
                 NOS SERVICES
               </Dropdown.Toggle>
               
-              <Dropdown.Menu>
+              <Dropdown.Menu className='Dropdown.Menu'>
                 <Dropdown.Item href="#/action-1">PRODUCTION</Dropdown.Item>
                 <Dropdown.Item href="#/action-2">APPROVISIONNEMENT</Dropdown.Item>
                 <Dropdown.Item href="#/action-3">STOCKAGE</Dropdown.Item>
@@ -134,8 +134,8 @@ const Header: FC<HeaderProps> = () => {
                 <Dropdown.Item href="#/action-3">COMMERCIALISATION DES INTRANTS ET ÉQUIPEMENTS AGRICOLES</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
-            </div>
-          </li>
+            </li>
+          
           <li>CONTACT</li>
         </ul>
         </div>

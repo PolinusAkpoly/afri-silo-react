@@ -6,34 +6,40 @@
 */
 
 .Header {
-
+position: sticky;
+top: 0;
+z-index: 12;
+/* width: 100%;  */
 }
 .Header .header-top{
 background-color: #008b58;
-height: 75px;
+height: 80px;
 align-items: center;
 justify-content: space-around;
 margin-left: -150px;
 margin-right: -150px;
+padding-bottom: 12px;
 }
 .Header .header-top .logo img{
-width: 50px;
+width: 75px;
+height: 50px;
 
 }
 .Header .header-top .company-name{
-font-size: 27px;
+font-size: 25px;
 
 }
 .Header .header-top .company-number{
-font-size: 27px;
+font-size: 25px;
 
 }
 
 
 .Header .header-bottom{
 background-color: white;
-height: 100px;
-border: 1px solid red;
+height: 80px;
+width: 100%;
+/* border: 1px solid red; */
 
 }
 .Header .header-bottom .header-bottom-content{
@@ -41,9 +47,9 @@ list-style: none;
 font-weight: bold;
 justify-content: center;
 align-items: center;
-padding: 40px;
+padding: 17px;
 color: #008b58;
-font-size: 22px;
+font-size: 20px;
 margin-top: -20px;
 }
 .Header .header-bottom .header-bottom-content  li{
@@ -108,13 +114,10 @@ font-size: 1px;
   z-index: 10;
 }
 .Header .header-bottom .bg-light{
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 110px;
-  left: 50px;
-  width: 500px;
-  
+
+ 
+  width: 100%!important; 
+  margin-left: -50px;
 }
 
 
@@ -129,12 +132,10 @@ font-size: 1px;
   font-size: 22px;
   margin-top: -20px;
   border: 2px solid blue;
-  /* width: 500px; */
-  width: 700px;
+  
+  /* width: 100%; */
 }
-/* .li:hover{
-  color: white;
-} */
+
 .Header .header-bottom .header-bottom-content-responsive li{
   
   display: flex;
@@ -164,15 +165,14 @@ font-size: 1px;
     
   }
   .Header .header-bottom .header-bottom-content-responsive li .dropdown-menu{
-    
+    position: absolute; 
+    /* left: 100px;   */
     margin-top: 10px;
-    margin: auto;
-    /* margin-left: -20.2%; */
+    z-index: 55;
     text-align: center;
     padding: 8px;
-    /* width: 500px; */
     width: 700px;
-    z-index: 12;
+    
   }
   .Header .header-bottom .header-bottom-content-responsive li .dropdown-menu .dropdown-item{
     font-weight: bold;
@@ -220,10 +220,10 @@ font-size: 1px;
   .Header .header-bottom .bg-light{
     display: flex; 
     flex-direction: column; 
-    /* position: absolute;
+    position: absolute;
     top: 110px;
-    left: 150px;
-    width: 500px; */
+    left: 50px;
+    width: 500px;
   }
   .Header .header-bottom .header-bottom-content-responsive li{
     display: flex;
@@ -232,20 +232,29 @@ font-size: 1px;
     height: 60px;
     width: 700px;
     }
-    .Header .header-bottom .header-bottom-content-responsive li .dropdown-menu {
-      /* margin-left: 500px!important; */
-      height: 300px;
-      width: 700px;
-      border: 2px solid blue;
+    .Header .header-bottom .bg-light li .dropdown-menu {     
+       position: absolute;
+      left: -200px;
+      
+     
+      
+       /* border: 2px solid rgb(0, 255, 34);  */
     
     }
+    .Header .header-bottom .bg-light .li .dropdown-menu {     
+      position: absolute;
+     left: -200px;
+      /* border: 2px solid rgb(0, 255, 34);  */
+   
+   }
+     
     .Header .header-bottom .header-bottom-content-responsive li .dropdown-menu .dropdown-item:hover{
       display: flex;
     justify-content: center;
     align-items: center;
     height: 60px;
     width: 680px;
-    /* margin-left: -135px; */
+    
     
     }
 
@@ -262,21 +271,32 @@ font-size: 1px;
    .Header .header-bottom .bg-light{
     /* display: flex;
     flex-direction: column; */
+    /* width: 400px; 
     position: absolute;
     top: 110px;
-    left: 50px;
+    left: -50px; */
    
-    /* border: 1px solid blue;
-    width: 500px; */
+     /* border: 1px solid blue; */
+    
   }
 
   .Header .header-bottom .header-bottom-content-responsive li{
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+   
     height: 50px;
     width: 500px;
+    margin-right: 50px;
     }
+    .Header .header-bottom .header-bottom-content-responsive li .dropdown-menu .dropdown-item:hover{
+      
+    height: 50px;
+    width: 570px;
+    
+    
+    }
+
+
+
+
 }
 
 
