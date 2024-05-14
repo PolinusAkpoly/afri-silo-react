@@ -15,6 +15,12 @@
   text-align: center;
 
 }
+.Home .nos-services p{
+  font-size: 40px;
+  
+border: 1px solid #f6bc57;
+
+}
 .h100{
   height: 200vh;
 }

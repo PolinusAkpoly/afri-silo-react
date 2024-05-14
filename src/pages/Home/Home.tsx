@@ -31,7 +31,8 @@ const Home : FC<HomeProps> = () =>{
          <Banner />
         <div className='bande'>bande</div>
         <div className=" nos-services">
-          <h1 className='mt-3'>NOS SERVICES</h1>
+          <p className='mt-3'>NOS SERVICES</p>
+          <hr />
         </div>
         <div className="h100 border"> Container</div>
       </div>
